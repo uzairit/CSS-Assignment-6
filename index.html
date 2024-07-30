@@ -8,21 +8,26 @@
     <style>
 *{margin: 0%; padding: 0%;}
 header{display: inline-block;}
-#img1{float: left; margin: 3px;}
-li{float: right; padding-left: 23px;}
+#img1{float: left; margin: 3px; bottom: px;}
+li{float: right; padding: 10px;}
 li{display: inline-block; font-weight: bolder;}
-ul{display: inline-block; margin-right: 100px;}
-nav{display: inline-block; margin-top: 20px; position: relative;} 
+ul{display: inline-block;}
+nav{display: inline-block;  position: relative;} 
 button{background-color:#059862; color: white; border-radius: 50px; display: inline-block; padding: 10px; width: 100px;
-position: absolute; bottom: 5px; border: none;}
-.c{background-color:#D9EEE1;  color: black; border: none; position: absolute;  left: 1100px; border-radius: 50px; display: inline-block; padding: 10px; width: 100px;}
-input{border-radius: 10px; padding: 2px;}
-li:hover{background-color: #059862; color:white;}
-div{display: inline-block; padding-right: 28.1px; padding-bottom: 5px; margin-top: 8px; padding-left: 3px; background-color: rgb(37, 36, 36); color: white;}
+       position: absolute; bottom: 13px; left: 1030px; border: none;}
+.c{background-color:#D9EEE1;  color: black; border: none; position:absolute; left:1095px; border-radius: 50px; display: inline-block; padding: 10px; padding-left: 30px; width: 100px;}
+.e:hover{background-color:black;  color:white;}
+.c:hover{background-color:black; color: white;}
+input{border-radius: 20px; display: inline-block; padding: 3px; position: relative; bottom: 18px;}
+#search{position: absolute; bottom: 20px; width: 20px; right: 300px;}
+li:hover{background-color: #059862; color: white;}
+div{display: inline-block; padding-right: 28.1px; padding-bottom: 5px; padding-top: 4px; padding-left: 3px; background-color: black; color: white;}
 .active,.a:hover{background-color: #059862;}
-#abc{background-color: #E7E9EB; margin:0px; overflow:scroll; height: 640px;}
+#abc{background-color: #E7E9EB; margin:0px; overflow-y:scroll; height: 614px;}
 .abc{display: block; padding-left:50px; background-color:#E7E9EB; color: black;}
 .abc:hover{background-color: #059862; color: white;}
+.d{background-color: white; color: black;  padding-right: 10px;}
+
 </style>
 </head>
 <body>
@@ -30,16 +35,16 @@ div{display: inline-block; padding-right: 28.1px; padding-bottom: 5px; margin-to
  <header>
      <nav>
          <ul>
-             <li><img src="img/icons8-shopping-cart-50.png" width="15px">GET CERTIFIED</li>
-             <li><img src="img/icons8-html-tag-24.png" alt="" width="15px">SPACES</li>
-             <li><input type="search" placeholder="Search"></li>
-             <li>SERVICES</li>
-             <li>CERTIFICATES</li>
-             <li>EXERCICES</li>
-             <li>TUTORIAL</li>
-            </ul>
+             <div class="d"><li>TUTORIAL</li></div>
+             <div class="d"><li>EXERCICES</li></div>
+             <div class="d"><li>CERTIFICATES</li></div>
+             <div class="d"><li>SERVICES</li></div>
+             <input type="search" placeholder="Search"> <img src="img/icons8-search-50.png" id="search">
+             <div class="d"><li><img src="img/icons8-html-tag-24.png" alt="" width="15px">SPACES</li></div>
+             <div class="d"><li><img src="img/icons8-shopping-cart-50.png" width="15px">GET CERTIFIED</li></div>
              <button class="c">Login</button>
-             <button>Sign Up</button>
+             <button class="e">Sign Up</button>
+            </ul>
             </nav>
         </header> 
         <div>
